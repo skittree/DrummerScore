@@ -40,6 +40,6 @@ We are grateful to the developers and maintainers of these tools for their contr
 
 ## Contact Information
 
-For any questions or inquiries about the HeartsOnFire ADT project, please contact us at [skittree@gmail.com].
+For any questions or inquiries about the HeartsOnFire ADT project, please contact us at skittree@gmail.com.
 
 We hope you find this software useful in your drum scoring endeavors! Happy drumming!
