@@ -16,11 +16,15 @@ To get started with the HeartsOnFire ADT project, follow these steps:
 ```bash
 git clone https://github.com/skittree/HeartsOnFire.git
 ```
-2. Install the required dependencies by running the following command:
+2. Install [CUDA 11.7](https://developer.nvidia.com/cuda-11-7-0-download-archive) and then PyTorch with CUDA:
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+```
+3. Install the rest of the required dependencies by running the following command:
 ```bash
 pip install -r requirements.txt
 ```
-3. Run `main.ipynb` and follow the instructions to generate MIDIs from mp3 files with drums.
+4. Run `main.ipynb` and follow the instructions to generate MIDIs from mp3 files with drums.
 
 Note: Make sure to download the pre-trained model file `HeartsOnFire-v.1.0.1_nfft1024_88.06.pth` from the models folder in the repository before running the `main.ipynb` notebook.
 
