@@ -24,6 +24,14 @@ pip install -r requirements.txt
 
 Note: Make sure to download the pre-trained model file `HeartsOnFire-v.1.0.1_nfft1024_88.06.pth` from the models folder in the repository before running the `main.ipynb` notebook.
 
+## Contributions
+
+We welcome contributions to the HeartsOnFire project! If you would like to contribute, please open an issue or submit a pull request on GitHub. We appreciate your feedback and support in making this project better.
+
+## License
+
+This project is released under the [MIT License](https://opensource.org/license/mit/), which means it is open-source and free to use, modify, and distribute for personal and commercial purposes.
+
 ## Acknowledgements
 
 We would like to express our gratitude to the following resources, libraries, and tools that have been used in this project:
