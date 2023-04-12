@@ -4,7 +4,7 @@ HeartsOnFire is a project aimed at creating an Automatic Drum Transcription (ADT
 
 ## Notebooks Included
 
-- `generating our own dataset.ipynb`: This notebook provides instructions and code for generating your own dataset for training the ADT model.
+- `generating our own dataset.ipynb`: This notebook provides instructions and code for generating your own iterative dataset for training the ADT model.
 - `model training.ipynb`: This notebook guides you through the process of training the ADT model using the generated dataset.
 - `main.ipynb`: This notebook allows you to input an .mp3 file and use the trained ADT model to receive a labeled MIDI file for the source-separated drum track.
 
