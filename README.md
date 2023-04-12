@@ -14,7 +14,7 @@ To get started with the HeartsOnFire ADT project, follow these steps:
 
 1. Clone the repository to your local machine:
 ```bash
-git clone https://github.com/yourusername/HeartsOnFire.git
+git clone https://github.com/skittree/HeartsOnFire.git
 ```
 2. Install the required dependencies by running the following command:
 ```bash
