@@ -2,26 +2,27 @@
 
 HeartsOnFire is a project aimed at creating an Automatic Drum Transcription (ADT) system to help beginner drummers create drum scores. This repository contains a series of Jupyter notebooks for generating your own dataset, training the ADT model, and using the trained model to transcribe drum tracks from input .mp3 files into labeled MIDI files.
 
-## Notebooks included
+## Notebooks Included
 
 - `generating our own dataset.ipynb`: This notebook provides instructions and code for generating your own dataset for training the ADT model.
 - `model training.ipynb`: This notebook guides you through the process of training the ADT model using the generated dataset.
 - `main.ipynb`: This notebook allows you to input an .mp3 file and use the trained ADT model to receive a labeled MIDI file for the source-separated drum track.
 
-## Dependencies
+## Getting Started
 
-The HeartsOnFire ADT project requires the following libraries and tools:
+To get started with the HeartsOnFire ADT project, follow these steps:
 
-- Python 3
-- Librosa (https://librosa.org/doc/main/index.html)
-- PyTorch (https://pytorch.org/)
-- NumPy (https://numpy.org/)
-- Pandas (https://pandas.pydata.org/)
-- pretty_midi (https://craffel.github.io/pretty-midi/)
-- demucs (https://github.com/facebookresearch/demucs)
-- torch_audiomentations (https://github.com/asteroid-team/torch-audiomentations)
+1. Clone the repository to your local machine:
+```bash
+git clone https://github.com/yourusername/HeartsOnFire.git
+```
+2. Install the required dependencies by running the following command:
+```bash
+pip install -r requirements.txt
+```
+3. Run `main.ipynb` and follow the instructions to generate MIDIs from mp3 files with drums.
 
-Please refer to the individual notebooks for more detailed instructions on using these dependencies.
+Note: Make sure to download the pre-trained model file `HeartsOnFire-v.1.0.1_nfft1024_88.06.pth` from the models folder in the repository before running the `main.ipynb` notebook.
 
 ## Acknowledgements
 
