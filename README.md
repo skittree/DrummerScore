@@ -44,8 +44,8 @@ We would like to express our gratitude to the following resources, libraries, an
 - [torch_audiomentations](https://github.com/asteroid-team/torch-audiomentations) - for data augmentation during model training.
 - [Pandas](https://pandas.pydata.org/) - for data manipulation and analysis in Python.
 - [GitHub](https://github.com/) - for providing a collaborative platform for open-source development.
-- [DrumTranscriber](https://github.com/yoshi-man/DrumTranscriber) - for giving inspiration on using `pigeon` to label data.
-- [pigeonXT](https://github.com/dennisbakhuis/pigeonXT) - for creating an advanced version of `pigeon` with multi-label capabilities.
+- [DrumTranscriber](https://github.com/yoshi-man/DrumTranscriber) - for giving inspiration on using pigeon to label data.
+- [pigeonXT](https://github.com/dennisbakhuis/pigeonXT) - for creating an advanced version of pigeon with multi-label capabilities.
 
 We are grateful to the developers and maintainers of these tools for their contributions to the open-source community, which have greatly benefited our project.
 
