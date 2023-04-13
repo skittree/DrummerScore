@@ -26,7 +26,7 @@ pip install -r requirements.txt
 ```
 4. Run `main.ipynb` and follow the instructions to generate MIDIs from mp3 files with drums.
 
-Note: Make sure to download the pre-trained model file `HeartsOnFire-v.1.0.1_nfft1024_88.06.pth` from the models folder in the repository before running the `main.ipynb` notebook.
+Note: Make sure to download the pre-trained model file `HeartsOnFire-v.1.0.2_nfft1024_88.12.pth` from the models folder in the repository before running the `main.ipynb` notebook.
 
 ## Contributions
 
