@@ -4,7 +4,7 @@ HeartsOnFire is a project aimed at creating an Automatic Drum Transcription (ADT
 
 ## Notebooks Included
 
-- `generating our own dataset.ipynb`: This notebook provides instructions and code for generating your own dataset for training the ADT model.
+- `generating our own dataset.ipynb`: This notebook provides instructions and code for generating your own iterative dataset for training the ADT model.
 - `model training.ipynb`: This notebook guides you through the process of training the ADT model using the generated dataset.
 - `main.ipynb`: This notebook allows you to input an .mp3 file and use the trained ADT model to receive a labeled MIDI file for the source-separated drum track.
 
@@ -16,11 +16,15 @@ To get started with the HeartsOnFire ADT project, follow these steps:
 ```bash
 git clone https://github.com/skittree/HeartsOnFire.git
 ```
-2. Install the required dependencies by running the following command:
+2. Install [CUDA 11.7](https://developer.nvidia.com/cuda-11-7-0-download-archive) and then PyTorch with CUDA:
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+```
+3. Install the rest of the required dependencies by running the following command:
 ```bash
 pip install -r requirements.txt
 ```
-3. Run `main.ipynb` and follow the instructions to generate MIDIs from mp3 files with drums.
+4. Run `main.ipynb` and follow the instructions to generate MIDIs from mp3 files with drums.
 
 Note: Make sure to download the pre-trained model file `HeartsOnFire-v.1.0.1_nfft1024_88.06.pth` from the models folder in the repository before running the `main.ipynb` notebook.
 
@@ -44,6 +48,8 @@ We would like to express our gratitude to the following resources, libraries, an
 - [torch_audiomentations](https://github.com/asteroid-team/torch-audiomentations) - for data augmentation during model training.
 - [Pandas](https://pandas.pydata.org/) - for data manipulation and analysis in Python.
 - [GitHub](https://github.com/) - for providing a collaborative platform for open-source development.
+- [DrumTranscriber](https://github.com/yoshi-man/DrumTranscriber) - for giving inspiration on using pigeon to label data.
+- [pigeonXT](https://github.com/dennisbakhuis/pigeonXT) - for creating an advanced version of pigeon with multi-label capabilities.
 
 We are grateful to the developers and maintainers of these tools for their contributions to the open-source community, which have greatly benefited our project.
 
