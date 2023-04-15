@@ -1,6 +1,6 @@
-# HeartsOnFire - Automatic Drum Transcription (ADT)
+# DrummerScore - Automatic Drum Transcription (ADT)
 
-HeartsOnFire is a project aimed at creating an Automatic Drum Transcription (ADT) system to help beginner drummers create drum scores. This repository contains a series of Jupyter notebooks for generating your own dataset, training the ADT model, and using the trained model to transcribe drum tracks from input .mp3 files into labeled MIDI files.
+DrummerScore is a project aimed at creating an Automatic Drum Transcription (ADT) system to help beginner drummers create drum scores. This repository contains a series of Jupyter notebooks for generating your own dataset, training the ADT model, and using the trained model to transcribe drum tracks from input .mp3 files into labeled MIDI files.
 
 ## Notebooks Included
 
@@ -26,11 +26,11 @@ pip install -r requirements.txt
 ```
 4. Run `main.ipynb` and follow the instructions to generate MIDIs from mp3 files with drums.
 
-Note: Make sure to download the pre-trained model file `HeartsOnFire-v.1.0.3_nfft1024_89.76.pth` from the models folder in the repository before running the `main.ipynb` notebook.
+Note: Make sure to download the pre-trained model file `HeartsOnFire-v.1.0.4_nfft1024_91.58.pth` from the models folder in the repository before running the `main.ipynb` notebook.
 
 ## Contributions
 
-We welcome contributions to the HeartsOnFire project! If you would like to contribute, please open an issue or submit a pull request on GitHub. We appreciate your feedback and support in making this project better.
+We welcome contributions to the DrummerScore project! If you would like to contribute, please open an issue or submit a pull request on GitHub. We appreciate your feedback and support in making this project better.
 
 ## License
 
