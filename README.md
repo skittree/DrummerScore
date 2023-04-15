@@ -1,6 +1,6 @@
-# HeartsOnFire - Automatic Drum Transcription (ADT)
+# DrummerScore - Automatic Drum Transcription (ADT)
 
-HeartsOnFire is a project aimed at creating an Automatic Drum Transcription (ADT) system to help beginner drummers create drum scores. This repository contains a series of Jupyter notebooks for generating your own dataset, training the ADT model, and using the trained model to transcribe drum tracks from input .mp3 files into labeled MIDI files.
+DrummerScore is a project aimed at creating an Automatic Drum Transcription (ADT) system to help beginner drummers create drum scores. This repository contains a series of Jupyter notebooks for generating your own dataset, training the ADT model, and using the trained model to transcribe drum tracks from input .mp3 files into labeled MIDI files.
 
 ## Notebooks Included
 
@@ -10,11 +10,11 @@ HeartsOnFire is a project aimed at creating an Automatic Drum Transcription (ADT
 
 ## Getting Started
 
-To get started with the HeartsOnFire ADT project, follow these steps:
+To get started with the DrummerScore ADT project, follow these steps:
 
 1. Clone the repository to your local machine:
 ```bash
-git clone https://github.com/skittree/HeartsOnFire.git
+git clone https://github.com/skittree/DrummerScore.git
 ```
 2. Install [CUDA 11.7](https://developer.nvidia.com/cuda-11-7-0-download-archive) and then PyTorch with CUDA:
 ```bash
@@ -26,11 +26,11 @@ pip install -r requirements.txt
 ```
 4. Run `main.ipynb` and follow the instructions to generate MIDIs from mp3 files with drums.
 
-Note: Make sure to download the pre-trained model file `HeartsOnFire-v.1.0.3_nfft1024_89.76.pth` from the models folder in the repository before running the `main.ipynb` notebook.
+Note: Make sure to download the pre-trained model file `HeartsOnFire-v.1.0.4_nfft1024_91.58.pth` from the models folder in the repository before running the `main.ipynb` notebook.
 
 ## Contributions
 
-We welcome contributions to the HeartsOnFire project! If you would like to contribute, please open an issue or submit a pull request on GitHub. We appreciate your feedback and support in making this project better.
+We welcome contributions to the DrummerScore project! If you would like to contribute, please open an issue or submit a pull request on GitHub. We appreciate your feedback and support in making this project better.
 
 ## License
 
@@ -55,6 +55,6 @@ We are grateful to the developers and maintainers of these tools for their contr
 
 ## Contact Information
 
-For any questions or inquiries about the HeartsOnFire ADT project, please contact us at skittree@gmail.com.
+For any questions or inquiries about the DrummerScore project, please contact us at skittree@gmail.com.
 
 We hope you find this software useful in your drum scoring endeavors! Happy drumming!
