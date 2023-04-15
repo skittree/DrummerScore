@@ -14,7 +14,7 @@ To get started with the DrummerScore ADT project, follow these steps:
 
 1. Clone the repository to your local machine:
 ```bash
-git clone https://github.com/skittree/HeartsOnFire.git
+git clone https://github.com/skittree/DrummerScore.git
 ```
 2. Install [CUDA 11.7](https://developer.nvidia.com/cuda-11-7-0-download-archive) and then PyTorch with CUDA:
 ```bash
