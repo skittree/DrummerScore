@@ -10,7 +10,7 @@ DrummerScore is a project aimed at creating an Automatic Drum Transcription (ADT
 
 ## Getting Started
 
-To get started with the HeartsOnFire ADT project, follow these steps:
+To get started with the DrummerScore ADT project, follow these steps:
 
 1. Clone the repository to your local machine:
 ```bash
@@ -55,6 +55,6 @@ We are grateful to the developers and maintainers of these tools for their contr
 
 ## Contact Information
 
-For any questions or inquiries about the HeartsOnFire ADT project, please contact us at skittree@gmail.com.
+For any questions or inquiries about the DrummerScore project, please contact us at skittree@gmail.com.
 
 We hope you find this software useful in your drum scoring endeavors! Happy drumming!
