@@ -6,11 +6,11 @@ DrummerScore is a project aimed at creating an Automatic Drum Transcription (ADT
 
 This project uses __spectrogram visualization__ to help streamline the scoring process.
 
-![DrummerScore Interface](https://github.com/skittree/DrummerScore/blob/master/diploma_figures/Desktop%20-%201%20(1).png)
+![DrummerScore Interface](https://github.com/skittree/DrummerScore/blob/master/notebooks/diploma_figures/Desktop%20-%201%20(1).png)
 
 There is a distinct lack of visualization methods in available scoring software, which is especially useful for drum transcription, even without predictions. It can help us correct any mistakes the model made placing the drums on the drum machine:
 
-![DrummerScore Drum Machine with Model Predictions](https://github.com/skittree/DrummerScore/blob/master/diploma_figures/Frame%20107%20(1).png)
+![DrummerScore Drum Machine with Model Predictions](https://github.com/skittree/DrummerScore/blob/master/notebooks/diploma_figures/Frame%20107%20(1).png)
 
 ## Notebooks Included
 
