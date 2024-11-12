@@ -1,0 +1,13 @@
+[project]
+name = "DrummerScore"
+version = "0.1.0"
+description = "DrummerScore is a project aimed at creating an Automatic Drum Transcription (ADT) system to help beginner drummers create drum scores."
+readme = "../README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "babel>=2.16.0",
+    "fastapi>=0.115.4",
+    "jinja2>=3.1.4",
+    "pydantic-settings>=2.6.1",
+    "uvicorn>=0.32.0",
+]

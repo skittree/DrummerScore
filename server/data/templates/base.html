@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}DrummerScore{% endblock %}</title>
+    {% block css %}{% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/main.css') }}" />
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', path='/favicon.ico') }}" />
+    {% block scripts %}{% endblock %}
+    <script src="https://unpkg.com/htmx.org@2.0.2"></script>
+  </head>
+  <body id="body">
+    {% block body %}
+    <div class="drawer lg:drawer-open">
+      <input id="drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content">
+        {% include 'core/header.html' %}
+        <div id="content" class="content">{% block content %} {% endblock content %}</div>
+      </div>
+      {% include 'core/sidebar.html' %}
+    </div>
+    {% endblock body %}
+  </body>
+</html>

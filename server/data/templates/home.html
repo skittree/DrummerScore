@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% from 'components/note.html' import drum_machine %} {% block scripts %}
+<script src="{{ url_for('static', path='js/play.js' )}}" defer></script>
+{% endblock %} {% block content %}
+<div class="flex w-full items-end sm:p-4">
+  <div class="flex w-full flex-col gap-2 text-center">
+    <input id="progress" name="progress" type="range" min="0" max="100000" value="0" class="renge-xs range range-primary" />
+    <audio id="audio" src=""></audio>
+    <div class="flex flex-row items-center justify-between gap-4">
+      <label for="play" class="swap">
+        <input id="play" type="checkbox"/>
+        <div class="btn btn-circle btn-primary swap-off">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M16.6582 9.28638C18.098 10.1862 18.8178 10.6361 19.0647 11.2122C19.2803 11.7152 19.2803 12.2847 19.0647 12.7878C18.8178 13.3638 18.098 13.8137 16.6582 14.7136L9.896 18.94C8.29805 19.9387 7.49907 20.4381 6.83973 20.385C6.26501 20.3388 5.73818 20.0469 5.3944 19.584C5 19.053 5 18.1108 5 16.2264V7.77357C5 5.88919 5 4.94701 5.3944 4.41598C5.73818 3.9531 6.26501 3.66111 6.83973 3.6149C7.49907 3.5619 8.29805 4.06126 9.896 5.05998L16.6582 9.28638Z" stroke-width="2" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="btn btn-circle btn-primary swap-on">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M8 5V19M16 5V19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </label>
+      <label for="bpm" class="input input-bordered flex w-fit items-center gap-2">
+        <svg class="h-4 w-4 opacity-70" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.5 8.89001V18.5M12.5 8.89001V5.57656C12.5 5.36922 12.5 5.26554 12.5347 5.17733C12.5653 5.09943 12.615 5.03047 12.6792 4.97678C12.752 4.91597 12.8503 4.88318 13.047 4.81761L17.447 3.35095C17.8025 3.23245 17.9803 3.17319 18.1218 3.20872C18.2456 3.23982 18.3529 3.31713 18.4216 3.42479C18.5 3.54779 18.5 3.73516 18.5 4.10989V7.42335C18.5 7.63069 18.5 7.73436 18.4653 7.82258C18.4347 7.90048 18.385 7.96943 18.3208 8.02313C18.248 8.08394 18.1497 8.11672 17.953 8.18229L13.553 9.64896C13.1975 9.76746 13.0197 9.82671 12.8782 9.79119C12.7544 9.76009 12.6471 9.68278 12.5784 9.57512C12.5 9.45212 12.5 9.26475 12.5 8.89001ZM12.5 18.5C12.5 19.8807 10.933 21 9 21C7.067 21 5.5 19.8807 5.5 18.5C5.5 17.1192 7.067 16 9 16C10.933 16 12.5 17.1192 12.5 18.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <input id="bpm" type="number" class="w-16" placeholder="BPM" value="120" />
+      </label>
+      <label for="repeat" class="flex flex-col items-center gap-1">
+        <span>{% trans %}Repeat{% endtrans %} <kbd class="kbd kbd-sm">R</kbd></span>
+        <input id="repeat" type="checkbox" class="toggle toggle-primary" checked="checked" />
+      </label>
+    </div>
+    {{ drum_machine(onsets) }}
+  </div>
+</div>
+{% endblock %}

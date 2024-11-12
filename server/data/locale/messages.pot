@@ -1,0 +1,55 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-10-10 06:17+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: templates/components/note.html:13
+msgid "Volume"
+msgstr ""
+
+#: templates/core/header.html:19 templates/core/sidebar.html:32
+msgid "Scores"
+msgstr ""
+
+#: templates/core/header.html:27 templates/core/sidebar.html:40
+msgid "Docs"
+msgstr ""
+
+#: templates/core/header.html:36 templates/core/sidebar.html:24
+msgid "Upload"
+msgstr ""
+
+#: templates/core/header.html:47
+msgid "Profile"
+msgstr ""
+
+#: templates/core/header.html:48
+msgid "New"
+msgstr ""
+
+#: templates/core/header.html:51
+msgid "Settings"
+msgstr ""
+
+#: templates/core/header.html:52
+msgid "Logout"
+msgstr ""
+
+#: templates/core/sidebar.html:16
+msgid "Menu"
+msgstr ""
+

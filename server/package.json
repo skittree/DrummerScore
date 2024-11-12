@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "daisyui": "^4.12.12",
+    "tailwindcss": "^3.4.13"
+  },
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./data/static/css/input.css -o ./data/static/css/main.css --watch --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15"
+  }
+}

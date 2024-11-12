@@ -1,0 +1,83 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Collect Messages",
+      "type": "shell",
+      "command": [
+        "pybabel"
+      ],
+      "args": [
+        "extract",
+        "-F",
+        "locale/babel.cfg",
+        "-o",
+        "locale/messages.pot",
+        "."
+      ],
+      "options": {
+        "cwd": "${workspaceRoot}/src"
+      },
+      "presentation": {
+        "close": true
+      }
+    },
+    {
+      "label": "Update Locale",
+      "type": "shell",
+      "command": [
+        "pybabel"
+      ],
+      "args": [
+        "update",
+        "-i",
+        "locale/messages.pot",
+        "-d",
+        "locale"
+      ],
+      "options": {
+        "cwd": "${workspaceRoot}/src"
+      },
+      "presentation": {
+        "close": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Compile Locale",
+      "type": "shell",
+      "command": [
+        "pybabel"
+      ],
+      "args": [
+        "compile",
+        "-f",
+        "-d",
+        "locale"
+      ],
+      "options": {
+        "cwd": "${workspaceRoot}/src"
+      },
+      "presentation": {
+        "close": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build",
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Collect Messages",
+        "Update Locale",
+        "Compile Locale"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "close": true
+      }
+    }
+  ]
+}

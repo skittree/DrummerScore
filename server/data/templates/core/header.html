@@ -1,0 +1,57 @@
+{% block header %}
+<header id="header" class="navbar">
+  <div class="flex-none lg:hidden">
+    <label for="drawer" aria-label="open sidebar" class="btn btn-circle btn-ghost">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-6 w-6 stroke-current">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </label>
+  </div>
+  <div class="mx-2 flex-1 text-xl font-bold lg:hidden">
+    <a href="{{ url_for('home') }}" class="flex-0 btn btn-ghost font-title text-lg">drummerscore</a>
+  </div>
+  <ul class="menu menu-horizontal sticky hidden flex-nowrap font-bold sm:flex lg:flex-1">
+    <li>
+      <a href="">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M16 5V18M16 18C16 19.1046 14.6569 20 13 20C11.3431 20 10 19.1046 10 18C10 16.8954 11.3431 16 13 16C14.6569 16 16 16.8954 16 18ZM4 5H12M4 9H12M4 13H8M16 4L20 3V7L16 8V4Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        {% trans %}Scores{% endtrans %}
+      </a>
+    </li>
+    <li>
+      <a href="{{ url_for('swagger_ui_html') }}">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 12H7L9 19L12 5L15 17L17 12H21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        {% trans %}Docs{% endtrans %}
+      </a>
+    </li>
+  </ul>
+  <div class="flex gap-4">
+    <a href="" class="btn btn-primary hidden sm:flex">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path d="M6 12H18M12 6V18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      {% trans %}Upload{% endtrans %}
+    </a>
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="avatar btn btn-circle btn-ghost">
+        <div class="w-10 rounded-full">
+          <img alt="Profile" src="{{ url_for('static', path='img/profile.png') }}" />
+        </div>
+      </div>
+      <ul tabindex="0" class="menu dropdown-content z-10 mt-4 w-52 rounded-box bg-base-300 p-2 shadow">
+        <li>
+          <a class="justify-between">
+            {% trans %}Profile{% endtrans %}
+            <span class="badge">{% trans %}New{% endtrans %}</span>
+          </a>
+        </li>
+        <li><a>{% trans %}Settings{% endtrans %}</a></li>
+        <li><a>{% trans %}Logout{% endtrans %}</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+{% endblock header %}

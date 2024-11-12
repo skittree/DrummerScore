@@ -1,0 +1,36 @@
+{% macro note(instrument="bass", id=0, checked=False, volume=50) %}
+<label for="{{ instrument }}_{{ id }}" class="note swap {{ instrument }}">
+  <input id="{{ instrument }}_{{ id }}" type="checkbox" name="{{ instrument }}_{{ id }}" {% if checked %}checked{% endif %} />
+  <div class="note-on"></div>
+  <div class="note-off"></div>
+  <!-- <ul class="volume hidden">
+    <li class="mb-2">{% trans %}Volume{% endtrans %}</li>
+    <li>
+      <a><input name="volume_{{ id }}" type="range" min="0" max="100" value="{{ volume }}" class="range range-primary" /></a>
+    </li>
+  </ul> -->
+</label>
+{% endmacro %} {% macro drum_machine(onsets) %}
+<div id="drum-machine" class="drum-machine">
+  <div id="col-instrument" class="mr-4 flex flex-col gap-1 font-semibold sm:mr-8">
+    <p id="crash-label" class="flex h-6 items-center justify-center whitespace-nowrap sm:h-12 sm:w-12">Crash</p>
+    <p id="ride-label" class="flex h-6 items-center justify-center whitespace-nowrap sm:h-12 sm:w-12">Ride</p>
+    <p id="hihat-label" class="flex h-6 items-center justify-center whitespace-nowrap sm:h-12 sm:w-12">Hi-Hat</p>
+    <p id="tom-label" class="flex h-6 items-center justify-center whitespace-nowrap sm:h-12 sm:w-12">Tom</p>
+    <p id="snare-label" class="flex h-6 items-center justify-center whitespace-nowrap sm:h-12 sm:w-12">Snare</p>
+    <p id="bass-label" class="flex h-6 items-center justify-center whitespace-nowrap sm:h-12 sm:w-12">Bass</p>
+  </div>
+  <div id="notes" class="flex gap-1 overflow-x-scroll py-2">
+    {% for i, onset in onsets %}
+    <div id="col_{{i}}" data-onset="{{ onset.onset }}" class="note-column">
+      {{ note("crash", i, onset["crash"]) }}
+      {{ note("ride", i, onset["ride"]) }}
+      {{ note("hihat", i, onset["hihat"]) }}
+      {{ note("tom", i, onset["tom"]) }}
+      {{ note("snare", i, onset["snare"]) }}
+      {{ note("bass", i, onset["bass"]) }}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endmacro %}

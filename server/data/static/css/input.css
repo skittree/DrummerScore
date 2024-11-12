@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @supports selector(::-webkit-scrollbar) {
+    * {
+      scrollbar-width: thin;
+    }
+  }
+
+  * {
+    scrollbar-color: oklch(var(--p)) rgba(0, 0, 0, 0);
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  ::selection {
+    @apply bg-primary text-primary-content;
+  }
+
+  .volume {
+    @apply absolute bottom-full left-full z-30 w-56 gap-2 rounded-box bg-base-300 p-4;
+  }
+
+  .note-on {
+    @apply btn btn-square btn-primary swap-on z-10 h-6 min-h-6 w-6 min-w-6 sm:h-12 sm:min-h-12 sm:w-12 sm:min-w-12;
+  }
+
+  .note-off {
+    @apply btn btn-square swap-off h-6 min-h-6 w-6 min-w-6 sm:h-12 sm:min-h-12 sm:w-12 sm:min-w-12;
+  }
+
+  .note-column {
+    @apply flex flex-col gap-1;
+  }
+
+  .drum-machine {
+    @apply flex w-full flex-row gap-1;
+  }
+
+  .highlighted-column .note-on {
+    @apply scale-150;
+  }
+
+  .highlighted-column .note-off {
+    @apply scale-50;
+  }
+
+  .content {
+    @apply flex h-full p-4;
+  }
+
+  .navbar {
+    @apply h-16 w-full bg-base-300 pr-8;
+  }
+
+  .drawer-content {
+    @apply flex min-h-screen flex-col;
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 100;
+    src: url(/static/fonts/Jost/Jost-Thin.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 200;
+    src: url(/static/fonts/Jost/Jost-ExtraLight.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 300;
+    src: url(/static/fonts/Jost/Jost-Light.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 400;
+    src: url(/static/fonts/Jost/Jost-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 500;
+    src: url(/static/fonts/Jost/Jost-Medium.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 600;
+    src: url(/static/fonts/Jost/Jost-SemiBold.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 700;
+    src: url(/static/fonts/Jost/Jost-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 800;
+    src: url(/static/fonts/Jost/Jost-ExtraBold.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 900;
+    src: url(/static/fonts/Jost/Jost-Black.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 100;
+    font-style: italic;
+    src: url(/static/fonts/Jost/Jost-ThinItalic.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 200;
+    font-style: italic;
+    src: url(/static/fonts/Jost/Jost-ExtraLightItalic.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 300;
+    font-style: italic;
+    src: url(/static/fonts/Jost/Jost-LightItalic.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 400;
+    font-style: italic;
+    src: url(/static/fonts/Jost/Jost-RegularItalic.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 500;
+    font-style: italic;
+    src: url(/static/fonts/Jost/Jost-MediumItalic.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 600;
+    font-style: italic;
+    src: url(/static/fonts/Jost/Jost-SemiBoldItalic.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 700;
+    font-style: italic;
+    src: url(/static/fonts/Jost/Jost-BoldItalic.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 800;
+    font-style: italic;
+    src: url(/static/fonts/Jost/Jost-ExtraBoldItalic.ttf);
+  }
+
+  @font-face {
+    font-family: "Jost";
+    font-weight: 900;
+    font-style: italic;
+    src: url(/static/fonts/Jost/Jost-BlackItalic.ttf);
+  }
+
+  @font-face {
+    font-family: "FingerPaint";
+    font-weight: 400;
+    src: url(/static/fonts/FingerPaint/FingerPaint-Regular.ttf);
+  }
+}

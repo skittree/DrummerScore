@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "FastAPI Server",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "src/main.py",
+            "cwd": "${workspaceFolder}/server"
+        },
+        {
+            "command": "npm run tailwind",
+            "name": "Tailwind Server",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/server",
+            "type": "node-terminal"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "DrummerScore",
+            "configurations": ["FastAPI Server", "Tailwind Server"],
+            "stopAll": true,
+            "presentation": {
+                "group": "main"
+            }
+        }
+    ]
+}
